@@ -41,9 +41,9 @@ loop = function(){
     ctx.clearRect(0,0,2000,2000);
     for(var i = 0; i < disks.length; i++){
         //console.log(disks[i]);
-        /*disks[i].checkAllCollisions();
+        disks[i].checkAllCollisions();
         disks[i].update();
-        disks[i].manageInput();*/
+        disks[i].manageInput();
         disks[i].draw();
     }
     window.requestAnimationFrame(loop);
